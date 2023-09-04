@@ -2,13 +2,13 @@ package DataAccess.Entities;
 
 public class GerenteTienda {
     private int ID_GERENTE_TIENDA;
-    private String NOMBRE;
+    private String NOMBRE_TIENDA;
     private String ESTADO;
 
     //Constructor de la tabla con sus respectivos parámetros para getters y setters
-    public GerenteTienda(int ID_GERENTE_TIENDA, String NOMBRE, String ESTADO){
+    public GerenteTienda(int ID_GERENTE_TIENDA, String NOMBRE_TIENDA, String ESTADO){
         this.ID_GERENTE_TIENDA = ID_GERENTE_TIENDA;
-        this.NOMBRE=NOMBRE;
+        this.NOMBRE_TIENDA=NOMBRE_TIENDA;
         this.ESTADO=ESTADO;
     }
 
@@ -21,12 +21,12 @@ public class GerenteTienda {
         this.ID_GERENTE_TIENDA = ID_GERENTE_TIENDA;
     }
 
-    public String getNOMBRE() {
-        return NOMBRE;
+    public String getNOMBRE_TIENDA() {
+        return NOMBRE_TIENDA;
     }
 
-    public void setNOMBRE(String NOMBRE) {
-        this.NOMBRE = NOMBRE;
+    public void setNOMBRE_TIENDA(String NOMBRE_TIENDA) {
+        this.NOMBRE_TIENDA = NOMBRE_TIENDA;
     }
 
     public String getESTADO() {

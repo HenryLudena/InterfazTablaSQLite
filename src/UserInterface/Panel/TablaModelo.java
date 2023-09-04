@@ -26,19 +26,19 @@ public class TablaModelo extends AbstractTableModel {
     public Object getValueAt(int rowIndex, int columnIndex) {
         DTO dto = datos.get(rowIndex);
         if (columnIndex == 0) {
-            return dto.getGerenteRegionalDTO().getNOMBRE();
+            return dto.getGerenteRegionalDTO().getNOMBRE_REGIONAL();
         } else if (columnIndex == 1) {
             return dto.getGerenteRegionalDTO().getID_GERENTE_REGIONAL();
         } else if (columnIndex == 2) {
             return dto.getGerenteRegionalDTO().getESTADO();
         } else if (columnIndex == 3) {
-            return dto.getGerenteTiendaDTO().getNOMBRE();
+            return dto.getGerenteTiendaDTO().getNOMBRE_TIENDA();
         } else if (columnIndex == 4) {
             return dto.getGerenteTiendaDTO().getID_GERENTE_TIENDA();
         } else if (columnIndex == 5) {
             return dto.getGerenteTiendaDTO().getESTADO();
         } else if (columnIndex == 6) {
-            return dto.getVendedorDTO().getNOMBRE();
+            return dto.getVendedorDTO().getNOMBRE_VENDEDOR();
         } else if (columnIndex == 7) {
             return dto.getVendedorDTO().getID_VENDEDOR();
         } else if (columnIndex == 8) {

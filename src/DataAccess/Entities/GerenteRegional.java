@@ -2,17 +2,18 @@ package DataAccess.Entities;
 
 public class GerenteRegional {
     private int ID_GERENTE_REGIONAL;
-    private String NOMBRE;
+    private String NOMBRE_REGIONAL;
     private String ESTADO;
 
+    
+
     //Constructor de la tabla con sus respectivos parámetros para getters y setters
-    public GerenteRegional(int ID_GERENTE_REGIONAL, String NOMBRE, String ESTADO){
+    public GerenteRegional(int ID_GERENTE_REGIONAL, String NOMBRE_REGIONAL, String ESTADO){
         this.ID_GERENTE_REGIONAL = ID_GERENTE_REGIONAL;
-        this.NOMBRE=NOMBRE;
+        this.NOMBRE_REGIONAL=NOMBRE_REGIONAL;
         this.ESTADO=ESTADO;
     }
-
-    //Getters y setters
+    //Getter y Setters
     public int getID_GERENTE_REGIONAL() {
         return ID_GERENTE_REGIONAL;
     }
@@ -21,12 +22,12 @@ public class GerenteRegional {
         this.ID_GERENTE_REGIONAL = ID_GERENTE_REGIONAL;
     }
 
-    public String getNOMBRE() {
-        return NOMBRE;
+    public String getNOMBRE_REGIONAL() {
+        return NOMBRE_REGIONAL;
     }
 
-    public void setNOMBRE(String NOMBRE) {
-        this.NOMBRE = NOMBRE;
+    public void setNOMBRE_REGIONAL(String NOMBRE_REGIONAL) {
+        this.NOMBRE_REGIONAL = NOMBRE_REGIONAL;
     }
 
     public String getESTADO() {
@@ -36,4 +37,7 @@ public class GerenteRegional {
     public void setESTADO(String ESTADO) {
         this.ESTADO = ESTADO;
     }
+
+    
+    
 }
